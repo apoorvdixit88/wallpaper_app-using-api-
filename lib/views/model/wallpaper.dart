@@ -25,14 +25,14 @@ factory WallpaperModel.fromMap(Map<String ,dynamic> jsonData){
 
 class SrcModel{
 
-  String original,small, potrait;
+  String original,small, portrait;
 
-  SrcModel({this.original,this.potrait,this.small});
+  SrcModel({this.original,this.portrait,this.small});
   factory SrcModel.fromMap(Map<String ,dynamic> jsonData){
 
       return SrcModel(
       
-       potrait: jsonData["potrait"],
+       portrait: jsonData["portrait"],
        original: jsonData["original"],
        small: jsonData["small"] 
       );
